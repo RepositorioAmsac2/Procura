@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7946b0ab-3394-41d8-9c4a-f9cafe99069c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFsafnetE.xsd" MetadataType="Schema" ID="8e8cec4c-bbcb-4f76-b038-f3501df76ba0" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFsafnetE.wsdl" MetadataType="Wsdl" ID="1c02c0d2-2272-4587-b947-cfc5dbe482c6" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?wsdl" />
+    <MetadataFile FileName="WCFsafnetE.disco" MetadataType="Disco" ID="6f3419bb-3b20-4ed0-bf69-40166335bb82" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?disco" />
+    <MetadataFile FileName="WCFsafnetE1.xsd" MetadataType="Schema" ID="88d865d3-d72b-448a-b838-eb6b27bea23c" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?xsd=xsd4" />
+    <MetadataFile FileName="WCFsafnetE5.xsd" MetadataType="Schema" ID="c7aeaea6-0071-43dd-8e50-8e9de19361f5" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?xsd=xsd5" />
+    <MetadataFile FileName="WCFsafnetE2.xsd" MetadataType="Schema" ID="dbba0124-6679-4a55-9cec-890dd9ad3e76" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFsafnetE3.xsd" MetadataType="Schema" ID="081c8ee3-fabd-4fbf-ac8a-1505555c9a8f" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?xsd=xsd3" />
+    <MetadataFile FileName="WCFsafnetE4.xsd" MetadataType="Schema" ID="09667080-22d6-4442-949f-1d333cdaa996" SourceId="1" SourceUrl="http://aplicacion.amsac.pe/SAFNET/WCFsafnetE.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

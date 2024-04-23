@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA044849-BB18-4108-816B-ECAC7834830B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MODEL.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actividad.cs" />
+    <Compile Include="adenda.cs" />
+    <Compile Include="Adjunto.cs" />
+    <Compile Include="Aeropuerto.cs" />
+    <Compile Include="AgrupadorClasificador.cs" />
+    <Compile Include="Ajuste.cs" />
+    <Compile Include="BoletaCabecera_ParametrosCalculoPlanilla.cs" />
+    <Compile Include="BuenaPro.cs" />
+    <Compile Include="CadenaFuncionalProyecto.cs" />
+    <Compile Include="CajaChica.cs" />
+    <Compile Include="CajaChica_Paso.cs" />
+    <Compile Include="CargoComite.cs" />
+    <Compile Include="Centro.cs" />
+    <Compile Include="CentroBeneficio.cs" />
+    <Compile Include="CentroCosto.cs" />
+    <Compile Include="CentroGestor.cs" />
+    <Compile Include="ClaseDocumento.cs" />
+    <Compile Include="ClaseGarantia.cs" />
+    <Compile Include="ClaseProyecto.cs" />
+    <Compile Include="Clasificador.cs" />
+    <Compile Include="Comite.cs" />
+    <Compile Include="Comite_Integrante.cs" />
+    <Compile Include="Comite_Integrante_Reemplazo.cs" />
+    <Compile Include="Comite_Resolucion.cs" />
+    <Compile Include="Componente.cs" />
+    <Compile Include="Concepto.cs" />
+    <Compile Include="ConceptoPlanilla.cs" />
+    <Compile Include="CondicionComite.cs" />
+    <Compile Include="Configuracion_HojaTrabajo.cs" />
+    <Compile Include="Conformidad.cs" />
+    <Compile Include="ConformidadAdjunto.cs" />
+    <Compile Include="ConformidadAjustePolinomico.cs" />
+    <Compile Include="ConformidadDocumentoTributario.cs" />
+    <Compile Include="Conformidadgarantia.cs" />
+    <Compile Include="ConformidadOtros.cs" />
+    <Compile Include="ConformidadPenalidad.cs" />
+    <Compile Include="ConformidadProyecto.cs" />
+    <Compile Include="ConformidadRetencion.cs" />
+    <Compile Include="Contacto.cs" />
+    <Compile Include="ContratoAnticipo.cs" />
+    <Compile Include="ContratoCabecera.cs" />
+    <Compile Include="ContratoGarantia.cs" />
+    <Compile Include="ContratoInicioActividad.cs" />
+    <Compile Include="Cotizacion.cs" />
+    <Compile Include="Dashboard_Formulacion_PIA.cs" />
+    <Compile Include="Dashboard_ProcesoLogistico_TipoProceso.cs" />
+    <Compile Include="Destino.cs" />
+    <Compile Include="DocumentoTramite.cs" />
+    <Compile Include="DocumentoTramite_Adjunto.cs" />
+    <Compile Include="DocumentoTramite_Contacto.cs" />
+    <Compile Include="DocumentoTramite_ContactoCC.cs" />
+    <Compile Include="DocumentoTramite_Detalle.cs" />
+    <Compile Include="DocumentoTramite_Entidad.cs" />
+    <Compile Include="DocumentoTramite_Proveido.cs" />
+    <Compile Include="DocumentoTramite_Seguimiento.cs" />
+    <Compile Include="EjecucionPresupuestal_Detalle.cs" />
+    <Compile Include="Empleado_Baja.cs" />
+    <Compile Include="Empleado_Contrato.cs" />
+    <Compile Include="Empresa_Login.cs" />
+    <Compile Include="EmpresaContratante.cs" />
+    <Compile Include="Encargatura.cs" />
+    <Compile Include="EntidadEncargadaConvocante.cs" />
+    <Compile Include="EntregableCabecera.cs" />
+    <Compile Include="EnvioCorreo.cs" />
+    <Compile Include="EstadoAperturaPaso.cs" />
+    <Compile Include="EstadoComite_Integrante.cs" />
+    <Compile Include="EstadoComite_Integrante_Reemplazo.cs" />
+    <Compile Include="EstadoMacroProyecto.cs" />
+    <Compile Include="EstadoProyecto.cs" />
+    <Compile Include="EtapaProyecto.cs" />
+    <Compile Include="FamiliaPosicionPresupuestal.cs" />
+    <Compile Include="Fase_ActividadProyecto.cs" />
+    <Compile Include="Feriado.cs" />
+    <Compile Include="FichaPresupuestal.cs" />
+    <Compile Include="FichaPresupuestal_Paso.cs" />
+    <Compile Include="FormatoEjecucion_F01.cs" />
+    <Compile Include="FormatoEjecucion_F02.cs" />
+    <Compile Include="FormatoEjecucion_F03.cs" />
+    <Compile Include="FormatoEjecucion_F04.cs" />
+    <Compile Include="FormatoEjecucion_F05.cs" />
+    <Compile Include="FormatoEjecucion_F06.cs" />
+    <Compile Include="FormatoEjecucion_F07.cs" />
+    <Compile Include="FormatoEjecucion_F08.cs" />
+    <Compile Include="FormatoEjecucion_F09.cs" />
+    <Compile Include="FormatoEjecucion_F10.cs" />
+    <Compile Include="Formato_Proyecto.cs" />
+    <Compile Include="Formulacion.cs" />
+    <Compile Include="Formulacion_Ajuste_Cabecera.cs" />
+    <Compile Include="Formulacion_Ajuste_Detalle.cs" />
+    <Compile Include="Formulacion_Detlle_CodFormulacion.cs" />
+    <Compile Include="Formulacion_HojaTrabajo_Ajuste.cs" />
+    <Compile Include="Formulacion_HojaTrabajo_Cabecera.cs" />
+    <Compile Include="Formulacion_HojaTrabajo_Configuracion.cs" />
+    <Compile Include="Formulacion_HojaTrabajo_Detalle.cs" />
+    <Compile Include="Formulacion_HojaTrabajo_Detalle_Item.cs" />
+    <Compile Include="Formulacion_HojaTrabajo_FONAFE.cs" />
+    <Compile Include="Formulacion_HojaTrabajo_Temporal.cs" />
+    <Compile Include="FormulaPlanilla.cs" />
+    <Compile Include="FormulaPlanillaBI.cs" />
+    <Compile Include="FuenteFinanciamiento.cs" />
+    <Compile Include="Gantt.cs" />
+    <Compile Include="GNLP.cs" />
+    <Compile Include="HojaTrabajo_Formato_Cabecera.cs" />
+    <Compile Include="HojaTrabajo_Formato_Detalle.cs" />
+    <Compile Include="Invitacion.cs" />
+    <Compile Include="ListaReasignacion.cs" />
+    <Compile Include="Mensaje.cs" />
+    <Compile Include="OrdenTrabajo.cs" />
+    <Compile Include="PosicionPresupuestal_SAP.cs" />
+    <Compile Include="PO_HojaTrabajo_Cabecera.cs" />
+    <Compile Include="PO_HojaTrabajo_Detalle.cs" />
+    <Compile Include="PO_HojaTrabajo_Detalle_Item.cs" />
+    <Compile Include="ProcesoAdquisicion.cs" />
+    <Compile Include="ProcesoLogistico_FichaPresupuestal.cs" />
+    <Compile Include="ProcesoLogistico_Gantt.cs" />
+    <Compile Include="Proyecto_Componente.cs" />
+    <Compile Include="Requerimiento_Detalle_Cronograma.cs" />
+    <Compile Include="SolicitudAdquisicion.cs" />
+    <Compile Include="TipoAnticipo.cs" />
+    <Compile Include="TipoContrato.cs" />
+    <Compile Include="TipoFuenteFinanciamiento.cs" />
+    <Compile Include="GrupoClaseProyecto.cs" />
+    <Compile Include="GrupoProyecto.cs" />
+    <Compile Include="GrupoRecurso.cs" />
+    <Compile Include="IndicadorImpuesto.cs" />
+    <Compile Include="LineaPosicionPresupuestal.cs" />
+    <Compile Include="MacroProyecto.cs" />
+    <Compile Include="ModalidadSeleccion.cs" />
+    <Compile Include="MotivoBaja.cs" />
+    <Compile Include="MotivoRechazoAjuste.cs" />
+    <Compile Include="MotivoRechazoRequerimiento.cs" />
+    <Compile Include="MotivoRevaluacion.cs" />
+    <Compile Include="NaturalezaProyecto.cs" />
+    <Compile Include="NivelSalarial.cs" />
+    <Compile Include="ObjetoContratacion.cs" />
+    <Compile Include="OperadorLogistico.cs" />
+    <Compile Include="ProcesoLogistico_Adjunto.cs" />
+    <Compile Include="ProcesoLogistico_Cabecera.cs" />
+    <Compile Include="ProcesoLogistico_Cabecera_Adjunto.cs" />
+    <Compile Include="ProcesoLogistico_Detalle.cs" />
+    <Compile Include="ProcesoLogistico_Duracion.cs" />
+    <Compile Include="ProcesoLogistico_Eliminado.cs" />
+    <Compile Include="Pac_HojaTrabajo_cabecera.cs" />
+    <Compile Include="Pac_HojaTrabajo.cs" />
+    <Compile Include="Pac_HojaTrabajo_detalle.cs" />
+    <Compile Include="Pac_HojaTrabajo_detalle_Item.cs" />
+    <Compile Include="ProcesoLogistico_Insertado.cs" />
+    <Compile Include="ProcesoLogistico_Modificado.cs" />
+    <Compile Include="ProcesoLogistico_OperadorLogistico.cs" />
+    <Compile Include="ProcesoLogistico_Paso.cs" />
+    <Compile Include="ProcesoLogistico_Paso_Adjunto.cs" />
+    <Compile Include="ProcesoLogistico_Paso_Apertura.cs" />
+    <Compile Include="ProcesoLogistico_Paso_CambioEstado.cs" />
+    <Compile Include="ProcesoLogistico_Paso_Cierre.cs" />
+    <Compile Include="ProcesoLogistico_Version.cs" />
+    <Compile Include="ParametroFormulacion.cs" />
+    <Compile Include="ParametroGestion.cs" />
+    <Compile Include="ParametroGestion_Empleado.cs" />
+    <Compile Include="ParametroLogistica.cs" />
+    <Compile Include="ParametroTramite.cs" />
+    <Compile Include="ParametroViatico.cs" />
+    <Compile Include="Parametro_Planilla.cs" />
+    <Compile Include="Paso.cs" />
+    <Compile Include="Paso_Ajuste.cs" />
+    <Compile Include="Patrimonio_Depreciacion.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="Empresa.cs" />
+    <Compile Include="Formulacion_Cabecera.cs" />
+    <Compile Include="Formulacion_Cabecera_Cege.cs" />
+    <Compile Include="Formulacion_Detalle.cs" />
+    <Compile Include="Formulacion_Detalle_Ingreso.cs" />
+    <Compile Include="Formulacion_Detalle_Personal.cs" />
+    <Compile Include="Formulacion_Detalle_Proyecto.cs" />
+    <Compile Include="Formulacion_Mes.cs" />
+    <Compile Include="Formulacion_Saldo.cs" />
+    <Compile Include="Material.cs" />
+    <Compile Include="MotivoTransferencia.cs" />
+    <Compile Include="Parametro_Patrimonio.cs" />
+    <Compile Include="Paso_Requerimiento.cs" />
+    <Compile Include="Patrimonio.cs" />
+    <Compile Include="Patrimonio_Origen.cs" />
+    <Compile Include="Patrimonio_Resguardo.cs" />
+    <Compile Include="Patrimonio_Saldos.cs" />
+    <Compile Include="Patrimonio_TipoMovimiento.cs" />
+    <Compile Include="Patrimonio_Transaccion.cs" />
+    <Compile Include="Patrimonio_Transferencia.cs" />
+    <Compile Include="PeriodoCalculoPlanilla.cs" />
+    <Compile Include="PeriodoCierreModificacion.cs" />
+    <Compile Include="PeriodoProceso.cs" />
+    <Compile Include="PeriodoProceso_Patrimonio.cs" />
+    <Compile Include="PosicionPresupuestal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedor.cs" />
+    <Compile Include="Proyecto.cs" />
+    <Compile Include="Proyecto_CentroCosto.cs" />
+    <Compile Include="Proyecto_Etapa.cs" />
+    <Compile Include="Proyecto_Etapa_Actividad.cs" />
+    <Compile Include="Proyecto_Etapa_CostoFijo.cs" />
+    <Compile Include="Proyecto_FuenteFinanciamiento.cs" />
+    <Compile Include="RecomendacionBaja.cs" />
+    <Compile Include="RecomendacionTransferencia.cs" />
+    <Compile Include="Reporte.cs" />
+    <Compile Include="Requerimiento.cs" />
+    <Compile Include="Requerimiento_Adjunto.cs" />
+    <Compile Include="Requerimiento_Cabecera.cs" />
+    <Compile Include="Requerimiento_Cabecera_Viatico.cs" />
+    <Compile Include="Requerimiento_Detalle.cs" />
+    <Compile Include="Requerimiento_Detalle_Bien.cs" />
+    <Compile Include="Requerimiento_Detalle_CoFinanciado.cs" />
+    <Compile Include="Requerimiento_Detalle_Servicio.cs" />
+    <Compile Include="Resumen.cs" />
+    <Compile Include="Servicio.cs" />
+    <Compile Include="SolicitudViatico.cs" />
+    <Compile Include="SolicitudViatico_OtroGasto.cs" />
+    <Compile Include="SolicitudViatico_Rendicion.cs" />
+    <Compile Include="SolicitudViatico_Rendicion_Impuesto.cs" />
+    <Compile Include="TareaProyecto.cs" />
+    <Compile Include="TerminoReferencia.cs" />
+    <Compile Include="TipoActividadProyecto.cs" />
+    <Compile Include="TipoAcumulador.cs" />
+    <Compile Include="TipoAdquisicion.cs" />
+    <Compile Include="TipoClasificador.cs" />
+    <Compile Include="TipoComite.cs" />
+    <Compile Include="TipoContabilidad.cs" />
+    <Compile Include="TipoDocumento.cs" />
+    <Compile Include="TipoDocumentoIdentidad.cs" />
+    <Compile Include="TipoDocumento_Pac.cs" />
+    <Compile Include="TipoEmpleado.cs" />
+    <Compile Include="TipoGarantia.cs" />
+    <Compile Include="TipoImpuesto.cs" />
+    <Compile Include="TipoIntegrante.cs" />
+    <Compile Include="TipoMoneda.cs" />
+    <Compile Include="TipoMotivoEliminacionPAC.cs" />
+    <Compile Include="TipoMotivoInserccionPAC.cs" />
+    <Compile Include="TipoMotivoModificacionPAC.cs" />
+    <Compile Include="TipoMovimientoPatrimonio.cs" />
+    <Compile Include="TipoPaso.cs" />
+    <Compile Include="TipoPlantillaPaso.cs" />
+    <Compile Include="TipoProceso.cs" />
+    <Compile Include="TipoProceso_Duracion.cs" />
+    <Compile Include="TipoProveidoDocumento.cs" />
+    <Compile Include="TipoProyecto.cs" />
+    <Compile Include="TipoRecurso.cs" />
+    <Compile Include="TipoTasa.cs" />
+    <Compile Include="TipoVoucher.cs" />
+    <Compile Include="TopePresupuestal.cs" />
+    <Compile Include="UbicacionGeografica.cs" />
+    <Compile Include="Ubigeo.cs" />
+    <Compile Include="UnidadEjecutoraProyecto.cs" />
+    <Compile Include="UnidadFormuladoraProyecto.cs" />
+    <Compile Include="UnidadMedida.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Usuario_Empresa.cs" />
+    <Compile Include="ValorEstimado.cs" />
+    <Compile Include="ValorEstimado_Cronograma.cs" />
+    <Compile Include="Viatico.cs" />
+    <Compile Include="Viatico_Paso.cs" />
+    <Compile Include="xmlDATA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MODEL.pfx" />
+    <None Include="Properties\DataSources\Pac_HojaTrabajo.datasource" />
+    <None Include="Properties\DataSources\SolicitudAdquisicion.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

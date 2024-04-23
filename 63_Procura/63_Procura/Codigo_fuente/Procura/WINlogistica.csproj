@@ -1,0 +1,2036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F69D3D3-A8BF-4C46-84F2-72812CC9A7BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WINlogistica</RootNamespace>
+    <AssemblyName>WINlogistica</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\SafNet\SAFnet\publicacion\pSafNet\App\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://aplicacion.amsac.pe/pSAFNET/</InstallUrl>
+    <ProductName>LOGISTICA</ProductName>
+    <PublisherName>AMSAC</PublisherName>
+    <SuiteName>LOGISTICA</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6DBA95F7D94A9062FC93786A086464D7D09104B2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>OtrosDatos.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CRVsPackageLib, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v22.2.Win, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v22.2.UI, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Images.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGantt.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="FN.FrameWork.Componentes">
+      <HintPath>..\dll\FN.FrameWork.Componentes.dll</HintPath>
+    </Reference>
+    <Reference Include="gnUserControl">
+      <HintPath>..\dll\gnUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Documents.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Documents.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Excel.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Excel.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Shared.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.AppStylistSupport.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.AppStylistSupport.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.Misc.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.SupportDialogs.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.SupportDialogs.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraChart.v8.1.Design, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraChart.v8.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraGauge.v8.1.Design, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraGauge.v8.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinCalcManager.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v8.1.FormulaBuilder, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinCalcManager.v8.1.FormulaBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinChart.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinDataSource.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinDock.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinEditors.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinExplorerBar.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGauge.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinGauge.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.DocumentExport.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinGrid.DocumentExport.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinGrid.ExcelExport.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinGrid.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinInkProvider.Ink17.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinInkProvider.Ink17.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinInkProvider.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinInkProvider.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinListBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinListBar.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinListView.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinListView.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinMaskedEdit.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinMaskedEdit.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinPrintPreviewDialog.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinSchedule.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSpellChecker.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.UltraWinSpellChecker.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinStatusBar.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinTabbedMdi.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinTabControl.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinToolbars.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.UltraWinTree.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WINformulacion\bin\Debug\Infragistics2.Win.v8.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.1.Design, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Infragistics2.Win.v8.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\WINformulacion\bin\Debug\ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\WINformulacion\bin\Debug\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayuda\Frm_AyudaHojaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_AyudaHojaGeneral.designer.cs">
+      <DependentUpon>Frm_AyudaHojaGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Ayuda_EtapaProcesoLogistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Ayuda_EtapaProcesoLogistico.designer.cs">
+      <DependentUpon>Frm_Ayuda_EtapaProcesoLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Formulacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\Frm_Formulacion.designer.cs">
+      <DependentUpon>Frm_Formulacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_ActualizaPaso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_ActualizaPaso.designer.cs">
+      <DependentUpon>Frm_ActualizaPaso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_Cotizaciones.Designer.cs">
+      <DependentUpon>Frm_Actualiza_Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_Invitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_Invitaciones.designer.cs">
+      <DependentUpon>Frm_Actualiza_Invitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_ValorEstimado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_ValorEstimado.designer.cs">
+      <DependentUpon>Frm_Actualiza_ValorEstimado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_ValorEstimado_Cronograma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_Actualiza_ValorEstimado_Cronograma.Designer.cs">
+      <DependentUpon>Frm_Actualiza_ValorEstimado_Cronograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_AsignaDependenciaOperadorLogistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_AsignaDependenciaOperadorLogistico.designer.cs">
+      <DependentUpon>Frm_AsignaDependenciaOperadorLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_AsignaDependenciaOperadorLogistico_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_AsignaDependenciaOperadorLogistico_D.designer.cs">
+      <DependentUpon>Frm_AsignaDependenciaOperadorLogistico_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_ProcesoLogistico_Contrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_ProcesoLogistico_Contrato.designer.cs">
+      <DependentUpon>Frm_ProcesoLogistico_Contrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Frm_ReemplazoOperadorLogistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Frm_ReemplazoOperadorLogistico.Designer.cs">
+      <DependentUpon>Frm_ReemplazoOperadorLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\MyStuff.cs" />
+    <Compile Include="Configuracion\UC_ActualizaEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configuracion\UC_ActualizaEmpresa.designer.cs">
+      <DependentUpon>UC_ActualizaEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_Consulta_Conformidad_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_Consulta_Conformidad_Adjunto.designer.cs">
+      <DependentUpon>Frm_Consulta_Conformidad_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_FirmaConformidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_FirmaConformidad.designer.cs">
+      <DependentUpon>Frm_FirmaConformidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_FormatoConformidad_Pantalla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_FormatoConformidad_Pantalla.designer.cs">
+      <DependentUpon>Frm_FormatoConformidad_Pantalla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_ListaConformidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_ListaConformidades.designer.cs">
+      <DependentUpon>Frm_ListaConformidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_ListaContratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_ListaContratos.designer.cs">
+      <DependentUpon>Frm_ListaContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_Adjunto.designer.cs">
+      <DependentUpon>Frm_NuevoConformidad_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_CambiaValor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_CambiaValor.designer.cs">
+      <DependentUpon>Frm_NuevoConformidad_CambiaValor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_FuenteFinanciamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_FuenteFinanciamiento.Designer.cs">
+      <DependentUpon>Frm_NuevoConformidad_FuenteFinanciamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_Otros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conformidad\Frm_NuevoConformidad_Otros.designer.cs">
+      <DependentUpon>Frm_NuevoConformidad_Otros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SRsafnetE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_AperturaPaso_Inicial_consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_AperturaPaso_Inicial_consulta.Designer.cs">
+      <DependentUpon>Frm_AperturaPaso_Inicial_consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_AperturaProceso_Inicial_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_AperturaProceso_Inicial_Consulta.designer.cs">
+      <DependentUpon>Frm_AperturaProceso_Inicial_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPac_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPac_Adjunto.designer.cs">
+      <DependentUpon>Frm_ConsultaPac_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPac_Cabecera_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPac_Cabecera_Adjunto.designer.cs">
+      <DependentUpon>Frm_ConsultaPac_Cabecera_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPac_Paso_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPac_Paso_Adjunto.designer.cs">
+      <DependentUpon>Frm_ConsultaPac_Paso_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaComite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaComite.Designer.cs">
+      <DependentUpon>Frm_ConsultaComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaDuracionPAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaDuracionPAC.Designer.cs">
+      <DependentUpon>Frm_ConsultaDuracionPAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaItemPAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaItemPAC.designer.cs">
+      <DependentUpon>Frm_ConsultaItemPAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPasoPAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ConsultaPasoPAC.designer.cs">
+      <DependentUpon>Frm_ConsultaPasoPAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ControlItemPAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ControlItemPAC.designer.cs">
+      <DependentUpon>Frm_ControlItemPAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\Frm_ListaConsulta_PAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\Frm_ListaConsulta_PAC.Designer.cs">
+      <DependentUpon>Frm_ListaConsulta_PAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_Ayuda_Contrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_Ayuda_Contrato.designer.cs">
+      <DependentUpon>Frm_Ayuda_Contrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_ConsultaContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_ConsultaContrato.designer.cs">
+      <DependentUpon>Frm_ConsultaContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_ModificaContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_ModificaContrato.designer.cs">
+      <DependentUpon>Frm_ModificaContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAdicional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAdicional.designer.cs">
+      <DependentUpon>Frm_NuevoAdicional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAdicional_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAdicional_D.designer.cs">
+      <DependentUpon>Frm_NuevoAdicional_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAnticipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAnticipo.designer.cs">
+      <DependentUpon>Frm_NuevoAnticipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAnticipo_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoAnticipo_D.designer.cs">
+      <DependentUpon>Frm_NuevoAnticipo_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoContrato.designer.cs">
+      <DependentUpon>Frm_NuevoContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoGarantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoGarantia.designer.cs">
+      <DependentUpon>Frm_NuevoGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoGarantia_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoGarantia_D.designer.cs">
+      <DependentUpon>Frm_NuevoGarantia_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoInicioActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoInicioActividad.designer.cs">
+      <DependentUpon>Frm_NuevoInicioActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoInicioActividad_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato\Frm_NuevoInicioActividad_D.designer.cs">
+      <DependentUpon>Frm_NuevoInicioActividad_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entregable\Frm_AyudaEntregable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entregable\Frm_AyudaEntregable.designer.cs">
+      <DependentUpon>Frm_AyudaEntregable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entregable\Frm_NuevoEntregable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entregable\Frm_NuevoEntregable.designer.cs">
+      <DependentUpon>Frm_NuevoEntregable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entregable\Frm_NuevoEntregable_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entregable\Frm_NuevoEntregable_D.designer.cs">
+      <DependentUpon>Frm_NuevoEntregable_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\CR_Requerimiento_Bien_Otro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Requerimiento_Bien_Otro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\CR_Requerimiento_Servicio_Otro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Requerimiento_Servicio_Otro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\CR_Requerimiento_Servicio_Pasaje.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Requerimiento_Servicio_Pasaje.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\CrystalReport\Rpt_Conformidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Conformidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formato\DataSet\DS_Conformidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Conformidad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\DataSet\Ds_Requerimiento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Requerimiento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formato\Formato\Frm_Formato_Rquerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formato\Formato\Frm_Formato_Rquerimiento.designer.cs">
+      <DependentUpon>Frm_Formato_Rquerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico\Form_Gantt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafico\Form_Gantt.Designer.cs">
+      <DependentUpon>Form_Gantt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico\Frm_AvanceItemPac_Gantt_Grafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafico\Frm_AvanceItemPac_Gantt_Grafico.Designer.cs">
+      <DependentUpon>Frm_AvanceItemPac_Gantt_Grafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico\Frm_Gantt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafico\Frm_Gantt.designer.cs">
+      <DependentUpon>Frm_Gantt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico\UC_HojaTrabajo_CurvaS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafico\UC_HojaTrabajo_CurvaS.designer.cs">
+      <DependentUpon>UC_HojaTrabajo_CurvaS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Frm_Login.designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Frm_ResetearContrasenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Frm_ResetearContrasenia.designer.cs">
+      <DependentUpon>Frm_ResetearContrasenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\Dashboard.designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Actualiza_TipoProceso_Duracion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Actualiza_TipoProceso_Duracion.designer.cs">
+      <DependentUpon>UC_Actualiza_TipoProceso_Duracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_AperuraEtapa_Seguimiento_PAC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_AperuraEtapa_Seguimiento_PAC.designer.cs">
+      <DependentUpon>UC_AperuraEtapa_Seguimiento_PAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_ControlProcesoLogistico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_ControlProcesoLogistico.designer.cs">
+      <DependentUpon>UC_ControlProcesoLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Dashboard_Area.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Dashboard_Area.designer.cs">
+      <DependentUpon>UC_Dashboard_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_EnlazaProceso_OperadorLogistico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_EnlazaProceso_OperadorLogistico.designer.cs">
+      <DependentUpon>UC_EnlazaProceso_OperadorLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Grafico_CurvaS_Procura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Grafico_CurvaS_Procura.designer.cs">
+      <DependentUpon>UC_Grafico_CurvaS_Procura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Grafico_CurvaS_Reporte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Grafico_CurvaS_Reporte.designer.cs">
+      <DependentUpon>UC_Grafico_CurvaS_Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Grafico_Gantt_Reporte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Grafico_Gantt_Reporte.designer.cs">
+      <DependentUpon>UC_Grafico_Gantt_Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_HojaTrabajo_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_HojaTrabajo_Dashboard.designer.cs">
+      <DependentUpon>UC_HojaTrabajo_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_Cotizaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_Cotizaciones.designer.cs">
+      <DependentUpon>UC_Lista_Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_CurvaS_Procura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_CurvaS_Procura.designer.cs">
+      <DependentUpon>UC_Lista_CurvaS_Procura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_CurvaS_Reporte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_CurvaS_Reporte.designer.cs">
+      <DependentUpon>UC_Lista_CurvaS_Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_EstudioMerdado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_EstudioMerdado.designer.cs">
+      <DependentUpon>UC_Lista_EstudioMerdado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_EtapaProcesoLogistico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_EtapaProcesoLogistico.designer.cs">
+      <DependentUpon>UC_Lista_EtapaProcesoLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_PAC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_PAC.designer.cs">
+      <DependentUpon>UC_Lista_PAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_Parametro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Lista_Parametro.designer.cs">
+      <DependentUpon>UC_Lista_Parametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_ProcesoLogistico_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_ProcesoLogistico_Dashboard.designer.cs">
+      <DependentUpon>UC_ProcesoLogistico_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Programacion_CurvaS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Programacion_CurvaS.designer.cs">
+      <DependentUpon>UC_Programacion_CurvaS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Seguimiento_PAC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Seguimiento_PAC.designer.cs">
+      <DependentUpon>UC_Seguimiento_PAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_TipoProceso_Duracion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_TipoProceso_Duracion.designer.cs">
+      <DependentUpon>UC_TipoProceso_Duracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo\UC_Vista_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulo\UC_Vista_Dashboard.designer.cs">
+      <DependentUpon>UC_Vista_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Ayuda\Frm_AyudaItemPAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Ayuda\Frm_AyudaItemPAC.designer.cs">
+      <DependentUpon>Frm_AyudaItemPAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Formatos\Frm_Calificacion_Adquisicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Formatos\Frm_Calificacion_Adquisicion.designer.cs">
+      <DependentUpon>Frm_Calificacion_Adquisicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite.designer.cs">
+      <DependentUpon>Frm_ActualizaComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite_Integrante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite_Integrante.designer.cs">
+      <DependentUpon>Frm_ActualizaComite_Integrante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite_Integrante_Reemplazo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite_Integrante_Reemplazo.designer.cs">
+      <DependentUpon>Frm_ActualizaComite_Integrante_Reemplazo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite_Resolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaComite_Resolucion.designer.cs">
+      <DependentUpon>Frm_ActualizaComite_Resolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPasoPAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPasoPAC.designer.cs">
+      <DependentUpon>Frm_ActualizaPasoPAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura.designer.cs">
+      <DependentUpon>Frm_ActualizaPaso_Apertura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura_Inicio.designer.cs">
+      <DependentUpon>Frm_ActualizaPaso_Apertura_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura_Proceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura_Proceso.designer.cs">
+      <DependentUpon>Frm_ActualizaPaso_Apertura_Proceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_PAC_cierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizaPaso_PAC_cierre.designer.cs">
+      <DependentUpon>Frm_ActualizaPaso_PAC_cierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizarAdquisicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ActualizarAdquisicion.designer.cs">
+      <DependentUpon>Frm_ActualizarAdquisicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Actualiza_Etapa_ProcesoLogistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Actualiza_Etapa_ProcesoLogistico.designer.cs">
+      <DependentUpon>Frm_Actualiza_Etapa_ProcesoLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Actualiza_TipoProceso_Duracion_Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Actualiza_TipoProceso_Duracion_Filtro.designer.cs">
+      <DependentUpon>Frm_Actualiza_TipoProceso_Duracion_Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_AsignaFormulacion_a_PAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_AsignaFormulacion_a_PAC.Designer.cs">
+      <DependentUpon>Frm_AsignaFormulacion_a_PAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaProcesoLogistico_OperadorLogistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaProcesoLogistico_OperadorLogistico.designer.cs">
+      <DependentUpon>Frm_EnlazaProcesoLogistico_OperadorLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso.designer.cs">
+      <DependentUpon>Frm_EnlazaRequerimiento_CreaProceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso_Detalle.designer.cs">
+      <DependentUpon>Frm_EnlazaRequerimiento_CreaProceso_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso_Numero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso_Numero.designer.cs">
+      <DependentUpon>Frm_EnlazaRequerimiento_CreaProceso_Numero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_OperadorLogistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_OperadorLogistico.designer.cs">
+      <DependentUpon>Frm_EnlazaRequerimiento_OperadorLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Formulacion_PAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Formulacion_PAC.designer.cs">
+      <DependentUpon>Frm_Formulacion_PAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Incluir_Pac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Incluir_Pac.designer.cs">
+      <DependentUpon>Frm_Incluir_Pac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac_ConFormulacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac_ConFormulacion.designer.cs">
+      <DependentUpon>Frm_Inclusion_Pac_ConFormulacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac_ConRequerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac_ConRequerimiento.designer.cs">
+      <DependentUpon>Frm_Inclusion_Pac_ConRequerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_InsertarFormulacion_a_Pac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_InsertarFormulacion_a_Pac.Designer.cs">
+      <DependentUpon>Frm_InsertarFormulacion_a_Pac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Pac_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Pac_Adjunto.designer.cs">
+      <DependentUpon>Frm_Pac_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Pac_Cabecera_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Pac_Cabecera_Adjunto.designer.cs">
+      <DependentUpon>Frm_Pac_Cabecera_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Pac_Paso_Adjunto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Pac_Paso_Adjunto.designer.cs">
+      <DependentUpon>Frm_Pac_Paso_Adjunto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_AperturaProceso_Ceges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_AperturaProceso_Ceges.Designer.cs">
+      <DependentUpon>Frm_AperturaProceso_Ceges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_CambiaEstadoPAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_CambiaEstadoPAC.designer.cs">
+      <DependentUpon>Frm_CambiaEstadoPAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Eliminacion_Pac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Eliminacion_Pac.designer.cs">
+      <DependentUpon>Frm_Eliminacion_Pac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Eliminacion_Pac_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Eliminacion_Pac_D.designer.cs">
+      <DependentUpon>Frm_Eliminacion_Pac_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac.designer.cs">
+      <DependentUpon>Frm_Inclusion_Pac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Inclusion_Pac_D.designer.cs">
+      <DependentUpon>Frm_Inclusion_Pac_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ItemPac_Duracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_ItemPac_Duracion.Designer.cs">
+      <DependentUpon>Frm_ItemPac_Duracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Modificacion_Pac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Modificacion_Pac.designer.cs">
+      <DependentUpon>Frm_Modificacion_Pac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Modificacion_Pac_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_Modificacion_Pac_D.designer.cs">
+      <DependentUpon>Frm_Modificacion_Pac_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_RechazoRequerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_RechazoRequerimiento.designer.cs">
+      <DependentUpon>Frm_RechazoRequerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_TableroDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_TableroDashboard.designer.cs">
+      <DependentUpon>Frm_TableroDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_TipoProceso_Duracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\Frm_TipoProceso_Duracion.designer.cs">
+      <DependentUpon>Frm_TipoProceso_Duracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\UC_Reporte_Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\UC_Reporte_Cotizaciones.designer.cs">
+      <DependentUpon>UC_Reporte_Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimiento\Transaccion\WaitForm1.designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\FM_MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\FM_MenuPrincipal.designer.cs">
+      <DependentUpon>FM_MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\FM_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\FM_Principal.designer.cs">
+      <DependentUpon>FM_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\FM_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\FM_Usuario.designer.cs">
+      <DependentUpon>FM_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Framework.cs" />
+    <Compile Include="Servicios\ftp.cs" />
+    <Compile Include="TablasAuxiliares\Frm_ActualizarEtapaProcesoLogistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_ActualizarEtapaProcesoLogistico.designer.cs">
+      <DependentUpon>Frm_ActualizarEtapaProcesoLogistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_TipoPlantillaPaso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_TipoPlantillaPaso.designer.cs">
+      <DependentUpon>Frm_TipoPlantillaPaso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_TipoProceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasAuxiliares\Frm_TipoProceso.designer.cs">
+      <DependentUpon>Frm_TipoProceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitario\Frm_ActualizarParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitario\Frm_ActualizarParametro.designer.cs">
+      <DependentUpon>Frm_ActualizarParametro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ayuda\Frm_AyudaHojaGeneral.resx">
+      <DependentUpon>Frm_AyudaHojaGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\Frm_Ayuda_EtapaProcesoLogistico.resx">
+      <DependentUpon>Frm_Ayuda_EtapaProcesoLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\Frm_Formulacion.resx">
+      <DependentUpon>Frm_Formulacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_ActualizaPaso.resx">
+      <DependentUpon>Frm_ActualizaPaso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_Actualiza_Cotizaciones.resx">
+      <DependentUpon>Frm_Actualiza_Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_Actualiza_Invitaciones.resx">
+      <DependentUpon>Frm_Actualiza_Invitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_Actualiza_ValorEstimado.resx">
+      <DependentUpon>Frm_Actualiza_ValorEstimado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_Actualiza_ValorEstimado_Cronograma.resx">
+      <DependentUpon>Frm_Actualiza_ValorEstimado_Cronograma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_AsignaDependenciaOperadorLogistico.resx">
+      <DependentUpon>Frm_AsignaDependenciaOperadorLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_AsignaDependenciaOperadorLogistico_D.resx">
+      <DependentUpon>Frm_AsignaDependenciaOperadorLogistico_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_ProcesoLogistico_Contrato.resx">
+      <DependentUpon>Frm_ProcesoLogistico_Contrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\Frm_ReemplazoOperadorLogistico.resx">
+      <DependentUpon>Frm_ReemplazoOperadorLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\UC_ActualizaEmpresa.resx">
+      <DependentUpon>UC_ActualizaEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_Consulta_Conformidad_Adjunto.resx">
+      <DependentUpon>Frm_Consulta_Conformidad_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_FirmaConformidad.resx">
+      <DependentUpon>Frm_FirmaConformidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_FormatoConformidad_Pantalla.resx">
+      <DependentUpon>Frm_FormatoConformidad_Pantalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_ListaConformidades.resx">
+      <DependentUpon>Frm_ListaConformidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_ListaContratos.resx">
+      <DependentUpon>Frm_ListaContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_NuevoConformidad_Adjunto.resx">
+      <DependentUpon>Frm_NuevoConformidad_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_NuevoConformidad_CambiaValor.resx">
+      <DependentUpon>Frm_NuevoConformidad_CambiaValor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_NuevoConformidad_FF.resx" />
+    <EmbeddedResource Include="Conformidad\Frm_NuevoConformidad_FuenteFinanciamiento.resx">
+      <DependentUpon>Frm_NuevoConformidad_FuenteFinanciamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conformidad\Frm_NuevoConformidad_Otros.resx">
+      <DependentUpon>Frm_NuevoConformidad_Otros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_AperturaPaso_Inicial_consulta.resx">
+      <DependentUpon>Frm_AperturaPaso_Inicial_consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_AperturaProceso_Inicial_Consulta.resx">
+      <DependentUpon>Frm_AperturaProceso_Inicial_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ConsultaPac_Adjunto.resx">
+      <DependentUpon>Frm_ConsultaPac_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ConsultaPac_Cabecera_Adjunto.resx">
+      <DependentUpon>Frm_ConsultaPac_Cabecera_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ConsultaPac_Paso_Adjunto.resx">
+      <DependentUpon>Frm_ConsultaPac_Paso_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ConsultaComite.resx">
+      <DependentUpon>Frm_ConsultaComite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ConsultaDuracionPAC.resx">
+      <DependentUpon>Frm_ConsultaDuracionPAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ConsultaItemPAC.resx">
+      <DependentUpon>Frm_ConsultaItemPAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ConsultaPasoPAC.resx">
+      <DependentUpon>Frm_ConsultaPasoPAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ControlItemPAC.resx">
+      <DependentUpon>Frm_ControlItemPAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\Frm_ListaConsulta_PAC.resx">
+      <DependentUpon>Frm_ListaConsulta_PAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_Ayuda_Contrato.resx">
+      <DependentUpon>Frm_Ayuda_Contrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_ConsultaContrato.resx">
+      <DependentUpon>Frm_ConsultaContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_ModificaContrato.resx">
+      <DependentUpon>Frm_ModificaContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoAdicional.resx">
+      <DependentUpon>Frm_NuevoAdicional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoAdicional_D.resx">
+      <DependentUpon>Frm_NuevoAdicional_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoAnticipo.resx">
+      <DependentUpon>Frm_NuevoAnticipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoAnticipo_D.resx">
+      <DependentUpon>Frm_NuevoAnticipo_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoContrato.resx">
+      <DependentUpon>Frm_NuevoContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoGarantia.resx">
+      <DependentUpon>Frm_NuevoGarantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoGarantia_D.resx">
+      <DependentUpon>Frm_NuevoGarantia_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoInicioActividad.resx">
+      <DependentUpon>Frm_NuevoInicioActividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contrato\Frm_NuevoInicioActividad_D.resx">
+      <DependentUpon>Frm_NuevoInicioActividad_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entregable\Frm_AyudaEntregable.resx">
+      <DependentUpon>Frm_AyudaEntregable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entregable\Frm_NuevoEntregable.resx">
+      <DependentUpon>Frm_NuevoEntregable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entregable\Frm_NuevoEntregable_D.resx">
+      <DependentUpon>Frm_NuevoEntregable_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\CR_Requerimiento_Bien_Otro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Requerimiento_Bien_Otro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\CR_Requerimiento_Servicio_Otro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Requerimiento_Servicio_Otro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\CR_Requerimiento_Servicio_Pasaje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Requerimiento_Servicio_Pasaje.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\CrystalReport\Rpt_Conformidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Conformidad.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato\Formato\Frm_Formato_Rquerimiento.resx">
+      <DependentUpon>Frm_Formato_Rquerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafico\Form_Gantt.resx">
+      <DependentUpon>Form_Gantt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafico\Frm_AvanceItemPac_Gantt_Grafico.resx">
+      <DependentUpon>Frm_AvanceItemPac_Gantt_Grafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafico\Frm_Gantt.resx">
+      <DependentUpon>Frm_Gantt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafico\UC_HojaTrabajo_CurvaS.resx">
+      <DependentUpon>UC_HojaTrabajo_CurvaS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Frm_ResetearContrasenia.resx">
+      <DependentUpon>Frm_ResetearContrasenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Actualiza_TipoProceso_Duracion.resx">
+      <DependentUpon>UC_Actualiza_TipoProceso_Duracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_AperuraEtapa_Seguimiento_PAC.resx">
+      <DependentUpon>UC_AperuraEtapa_Seguimiento_PAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_ControlProcesoLogistico.resx">
+      <DependentUpon>UC_ControlProcesoLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Dashboard_Area.resx">
+      <DependentUpon>UC_Dashboard_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_EnlazaProceso_OperadorLogistico.resx">
+      <DependentUpon>UC_EnlazaProceso_OperadorLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Grafico_CurvaS_Procura.resx">
+      <DependentUpon>UC_Grafico_CurvaS_Procura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Grafico_CurvaS_Reporte.resx">
+      <DependentUpon>UC_Grafico_CurvaS_Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Grafico_Gantt_Reporte.resx">
+      <DependentUpon>UC_Grafico_Gantt_Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_HojaTrabajo_Dashboard.resx">
+      <DependentUpon>UC_HojaTrabajo_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Lista_Cotizaciones.resx">
+      <DependentUpon>UC_Lista_Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Lista_CurvaS_Procura.resx">
+      <DependentUpon>UC_Lista_CurvaS_Procura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Lista_CurvaS_Reporte.resx">
+      <DependentUpon>UC_Lista_CurvaS_Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Lista_EstudioMerdado.resx">
+      <DependentUpon>UC_Lista_EstudioMerdado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Lista_EtapaProcesoLogistico.resx">
+      <DependentUpon>UC_Lista_EtapaProcesoLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Lista_PAC.resx">
+      <DependentUpon>UC_Lista_PAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Lista_Parametro.resx">
+      <DependentUpon>UC_Lista_Parametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_ProcesoLogistico_Dashboard.resx">
+      <DependentUpon>UC_ProcesoLogistico_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Programacion_CurvaS.resx">
+      <DependentUpon>UC_Programacion_CurvaS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Seguimiento_PAC.resx">
+      <DependentUpon>UC_Seguimiento_PAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_TipoProceso_Duracion.resx">
+      <DependentUpon>UC_TipoProceso_Duracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo\UC_Vista_Dashboard.resx">
+      <DependentUpon>UC_Vista_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Ayuda\Frm_AyudaItemPAC.resx">
+      <DependentUpon>Frm_AyudaItemPAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Formatos\Frm_Calificacion_Adquisicion.resx">
+      <DependentUpon>Frm_Calificacion_Adquisicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaComite.resx">
+      <DependentUpon>Frm_ActualizaComite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaComite_Integrante.resx">
+      <DependentUpon>Frm_ActualizaComite_Integrante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaComite_Integrante_Reemplazo.resx">
+      <DependentUpon>Frm_ActualizaComite_Integrante_Reemplazo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaComite_Resolucion.resx">
+      <DependentUpon>Frm_ActualizaComite_Resolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaPasoPAC.resx">
+      <DependentUpon>Frm_ActualizaPasoPAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura.resx">
+      <DependentUpon>Frm_ActualizaPaso_Apertura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura_Inicio.resx">
+      <DependentUpon>Frm_ActualizaPaso_Apertura_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaPaso_Apertura_Proceso.resx">
+      <DependentUpon>Frm_ActualizaPaso_Apertura_Proceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizaPaso_PAC_cierre.resx">
+      <DependentUpon>Frm_ActualizaPaso_PAC_cierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ActualizarAdquisicion.resx">
+      <DependentUpon>Frm_ActualizarAdquisicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Actualiza_Etapa_ProcesoLogistico.resx">
+      <DependentUpon>Frm_Actualiza_Etapa_ProcesoLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Actualiza_TipoProceso_Duracion_Filtro.resx">
+      <DependentUpon>Frm_Actualiza_TipoProceso_Duracion_Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_AsignaFormulacion_a_PAC.resx">
+      <DependentUpon>Frm_AsignaFormulacion_a_PAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_EnlazaProcesoLogistico_OperadorLogistico.resx">
+      <DependentUpon>Frm_EnlazaProcesoLogistico_OperadorLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso.resx">
+      <DependentUpon>Frm_EnlazaRequerimiento_CreaProceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso_Detalle.resx">
+      <DependentUpon>Frm_EnlazaRequerimiento_CreaProceso_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_CreaProceso_Numero.resx">
+      <DependentUpon>Frm_EnlazaRequerimiento_CreaProceso_Numero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_EnlazaRequerimiento_OperadorLogistico.resx">
+      <DependentUpon>Frm_EnlazaRequerimiento_OperadorLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Formulacion_PAC.resx">
+      <DependentUpon>Frm_Formulacion_PAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Incluir_Pac.resx">
+      <DependentUpon>Frm_Incluir_Pac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Inclusion_Pac_ConFormulacion.resx">
+      <DependentUpon>Frm_Inclusion_Pac_ConFormulacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Inclusion_Pac_ConRequerimiento.resx">
+      <DependentUpon>Frm_Inclusion_Pac_ConRequerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_InsertarFormulacion_a_Pac.resx">
+      <DependentUpon>Frm_InsertarFormulacion_a_Pac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Pac_Adjunto.resx">
+      <DependentUpon>Frm_Pac_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Pac_Cabecera_Adjunto.resx">
+      <DependentUpon>Frm_Pac_Cabecera_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Pac_Paso_Adjunto.resx">
+      <DependentUpon>Frm_Pac_Paso_Adjunto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_AperturaProceso_Ceges.resx">
+      <DependentUpon>Frm_AperturaProceso_Ceges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_CambiaEstadoPAC.resx">
+      <DependentUpon>Frm_CambiaEstadoPAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Eliminacion_Pac.resx">
+      <DependentUpon>Frm_Eliminacion_Pac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Eliminacion_Pac_D.resx">
+      <DependentUpon>Frm_Eliminacion_Pac_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Inclusion_Pac.resx">
+      <DependentUpon>Frm_Inclusion_Pac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Inclusion_Pac_D.resx">
+      <DependentUpon>Frm_Inclusion_Pac_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_ItemPac_Duracion.resx">
+      <DependentUpon>Frm_ItemPac_Duracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Modificacion_Pac.resx">
+      <DependentUpon>Frm_Modificacion_Pac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_Modificacion_Pac_D.resx">
+      <DependentUpon>Frm_Modificacion_Pac_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_RechazoRequerimiento.resx">
+      <DependentUpon>Frm_RechazoRequerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_TableroDashboard.resx">
+      <DependentUpon>Frm_TableroDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\Frm_TipoProceso_Duracion.resx">
+      <DependentUpon>Frm_TipoProceso_Duracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\UC_Reporte_Cotizaciones.resx">
+      <DependentUpon>UC_Reporte_Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimiento\Transaccion\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\FM_MenuPrincipal.resx">
+      <DependentUpon>FM_MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\FM_Principal.resx">
+      <DependentUpon>FM_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\FM_Usuario.resx">
+      <DependentUpon>FM_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_ActualizarEtapaProcesoLogistico.resx">
+      <DependentUpon>Frm_ActualizarEtapaProcesoLogistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_TipoPlantillaPaso.resx">
+      <DependentUpon>Frm_TipoPlantillaPaso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasAuxiliares\Frm_TipoProceso.resx">
+      <DependentUpon>Frm_TipoProceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitario\Frm_ActualizarParametro.resx">
+      <DependentUpon>Frm_ActualizarParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE.wsdl" />
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Excel\Grafico_CurvaS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Reporte_ProcesoLogistico_Dashboard.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Grafico_CurvaS_Reporte.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Programacion_FechaContratacion.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Reporte_Cotizaciones.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Formato_TipoProceso_Duracion.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Excel\Formato_Etapa_ProcesoLogistico.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Formato\DataSet\DS_Conformidad.xsc">
+      <DependentUpon>DS_Conformidad.xsd</DependentUpon>
+    </None>
+    <None Include="Formato\DataSet\DS_Conformidad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Conformidad.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formato\DataSet\DS_Conformidad.xss">
+      <DependentUpon>DS_Conformidad.xsd</DependentUpon>
+    </None>
+    <None Include="Formato\DataSet\Ds_Requerimiento.xsc">
+      <DependentUpon>Ds_Requerimiento.xsd</DependentUpon>
+    </None>
+    <None Include="Formato\DataSet\Ds_Requerimiento.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Requerimiento.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formato\DataSet\Ds_Requerimiento.xss">
+      <DependentUpon>Ds_Requerimiento.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Model.Centro.datasource" />
+    <None Include="Properties\DataSources\Model.CentroGestor.datasource" />
+    <None Include="Properties\DataSources\Model.Comite.datasource" />
+    <None Include="Properties\DataSources\Model.Comite_Integrante.datasource" />
+    <None Include="Properties\DataSources\Model.Comite_Resolucion.datasource" />
+    <None Include="Properties\DataSources\Model.Empleado.datasource" />
+    <None Include="Properties\DataSources\Model.EntidadEncargadaConvocante.datasource" />
+    <None Include="Properties\DataSources\Model.FuenteFinanciamientoPAC.datasource" />
+    <None Include="Properties\DataSources\Model.ModalidadSeleccion.datasource" />
+    <None Include="Properties\DataSources\Model.ObjetoContratacion.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Adjunto.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Cabecera.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Cabecera_Adjunto.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Detalle.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Duracion.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Eliminado.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Insertado.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Modificado.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_OperadorLogistico.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Paso.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Paso_Adjunto.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Paso_Apertura.datasource" />
+    <None Include="Properties\DataSources\Model.Pac_Version.datasource" />
+    <None Include="Properties\DataSources\Model.ParametroLogistica.datasource" />
+    <None Include="Properties\DataSources\Model.Paso.datasource" />
+    <None Include="Properties\DataSources\Model.ProcesoLogistico_Detalle.datasource" />
+    <None Include="Properties\DataSources\Model.Proyecto.datasource" />
+    <None Include="Properties\DataSources\Model.TipoAdquisicion.datasource" />
+    <None Include="Properties\DataSources\Model.TipoMoneda.datasource" />
+    <None Include="Properties\DataSources\Model.TipoProceso.datasource" />
+    <None Include="Properties\DataSources\Model.TipoProceso_Duracion.datasource" />
+    <None Include="Properties\DataSources\Model.UnidadMedida.datasource" />
+    <None Include="Properties\DataSources\Model.Usuario.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CierrePaso\" />
+    <Folder Include="Reporte\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\024-busqueda-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\024-busqueda-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\040-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\041-interfaz-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Aceptar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\acroread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ActualizarVersion32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Anulado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\aperturar_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\aperturar_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Buscar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Calcular32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Calendario_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cancelar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Ceco32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CecoProyecto32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cerrar_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cerrar_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cerrar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\chart_gray_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Clave_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CLIP-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CLOSE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\corona.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\db.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\del_Documento.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\del_Documento1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Detalle32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Distribuir32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Eliminar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Eliminar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\elorload.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Empleado32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\esfera_ambar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\esfera_roja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\esfera_verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Exportar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\filtrodatos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Financiamiento32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Formulacion32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\genesis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\grabar_salir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\grabaRegistro.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Guardar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Guardar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Imprimir32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Interno32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Inversion32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Lista_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Lista32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ListaPendiente32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\llave-01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\llaves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LoginAmsac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LogoAM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\mod_Documento.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\mod_Documento1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Nuevo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Nuevo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Paquete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\pasos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Proyecto32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ReporteCeco32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ReporteProyecto32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Saldo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Searche_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Tarea32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Undo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Usuario_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SRsafnetE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\newDocument.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRsafnetE\WCFsafnetE.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRsafnetE\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRsafnetE\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SRsafnetE\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagen\LogoAM.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OtrosDatos.ico" />
+    <EmbeddedResource Include="Resources\Adjuntar.png" />
+    <EmbeddedResource Include="Resources\clip_desactivado.png" />
+    <EmbeddedResource Include="Resources\moneda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{da044849-bb18-4108-816b-ecac7834830b}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Project>{db42bcaf-58bc-4e58-9408-0f6e0c1569f0}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
